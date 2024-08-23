@@ -1,0 +1,41 @@
+
+1. Création du dépôt distant sur Github :
+	. Bouton vert
+	. Accepter le readme
+	. Création d'une branche master depuis main
+
+2. Ouvrir un git bash depuis GIT_REPOS
+	. git clone https://github.com/KandideFT62/Repo_test.git
+	. cd Repo_test/
+	. git checkout -b master 
+	. git branch --set-upstream-to=origin/master
+
+3. Ajout de ce fichier dans le repos local
+	. git status
+	. git add test_git_repos.txt
+	. git commit -m "Ajout d'un fichier"
+	. git push
+
+4. Depuis le dépôt distant sur Github :
+	. Bandeau jaune indiquant que du code a été poussé
+	. Cliquer sur le bouton Compare & pull request
+	. Cliquer sur Create pull request ->> Merge pull request ->> Confirm merge
+	
+5. Supprimer la branche master en local et en distant
+	. git branch -d master (local)
+	. git push origin --delete master
+
+6. Supprimer le dépôt dans Github :
+	. Se placer dans le dépôt distant
+	. Settings ->> Danger Zone ->> Delete this repository
+	. Suivre les instructions
+
+7. Les commandes git utiles :
+	. git init
+	. git clone https://github.com/KandideFT62/Repo_test.git
+	. git branch --set-upstream-to=origin/master
+	. git pull --allow-unrelated-histories
+	. git remote rm Repo_test
+	. git branch
+	. git branch -r
+	. git status
